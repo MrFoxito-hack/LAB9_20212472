@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Configuración del servlet -->
+    <servlet>
+        <servlet-name>PartidoServlet</servlet-name>
+        <servlet-class>com.example.lab9_base.Controller.PartidoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PartidoServlet</servlet-name>
+        <url-pattern>/PartidoServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuración para redirigir al servlet directamente al inicio -->
+    <welcome-file-list>
+        <welcome-file>PartidoServlet</welcome-file>
+    </welcome-file-list>
+
+</web-app>
